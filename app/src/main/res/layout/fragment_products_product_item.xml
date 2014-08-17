@@ -4,17 +4,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="?android:attr/listPreferredItemHeight"
     android:clickable="true"
-    android:orientation="vertical"
-    android:paddingLeft="40dp"
-    android:paddingRight="40dp"
+    android:paddingLeft="@dimen/fragment_products_product_item_padding"
+    android:paddingRight="@dimen/fragment_products_product_item_padding"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/productName"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:layout_alignParentLeft="true"
         android:text="Product name"
@@ -22,14 +21,27 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/productPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:gravity="center_vertical"
+        android:id="@+id/productQuantityInBasket"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:layout_alignParentRight="true"
-        android:text="Product price"
+        android:text="0"
         android:textSize="@dimen/fragment_products_product_textsize"
         android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/productQuantityInBasket"
+        android:layout_marginRight="@dimen/fragment_products_product_item_padding"
+        android:text="0"
+        android:textSize="@dimen/fragment_products_product_textsize"
+        android:textStyle="italic"/>
+
+
 
     <!--<View
         android:layout_width="match_parent"

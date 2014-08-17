@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingRight="@dimen/fragment_products_product_item_padding"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    >
 
     <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/categoryName"
         android:layout_width="wrap_content"
-        android:layout_height="?android:attr/listPreferredItemHeight"
-        android:layout_marginLeft="@dimen/fragment_products_category_margin_left"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/fragment_products_product_item_padding"
         android:gravity="left|center_vertical"
         android:text="Product category"
         android:textSize="@dimen/fragment_products_category_textsize"
         android:textStyle="bold" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/productQuantityInBasket"
+        android:src="@drawable/ic_action_cart"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/productQuantityInBasket"
+        android:layout_marginRight="@dimen/fragment_products_product_item_padding"
+        android:text="$"
+        android:textSize="@dimen/fragment_products_category_textsize"
+        android:textStyle="bold" />
+
+</RelativeLayout>
