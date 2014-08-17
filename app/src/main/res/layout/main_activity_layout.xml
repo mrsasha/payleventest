@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/products"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:context=".PaylevenTestActivity"
+        tools:ignore="MergeRootFrame" />
+
+    <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/basket"
+        android:layout_width="@dimen/fragment_basket_width"
+        android:layout_height="match_parent"
+        tools:context=".PaylevenTestActivity"
+        tools:ignore="MergeRootFrame" />
+</LinearLayout>
