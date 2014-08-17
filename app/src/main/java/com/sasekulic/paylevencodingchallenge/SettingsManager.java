@@ -27,7 +27,6 @@ public class SettingsManager implements IDisposable {
     @Getter private Application mParentApplication;
     @Getter private Gson mGson = new GsonBuilder().create();
     @Getter private IPaylevenApi mPaylevenApiService;
-    //@Getter @Setter private IActionBarTitleHandler mActionBarTitleHandler;
     @Getter private ShoppingBasketManager mShoppingBasketManager;
 
 
