@@ -33,7 +33,7 @@ public class ShoppingBasketManager {
         mTotalView = totalView;
     }
 
-    private void updateTotal (int total) {
+    public void updateTotal (int total) {
         mSettingsManager.getLogger().info("total = " + mShoppingBasketTotal);
         mShoppingBasketTotal = total;
         if (mTotalView!=null)
