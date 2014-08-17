@@ -20,7 +20,7 @@
 
         <TextView
             android:id="@+id/productQuantityInBasket"
-            android:layout_width="30dp"
+            android:layout_width="@dimen/fragment_basket_product_quantity_width"
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_alignParentRight="true"
@@ -30,7 +30,7 @@
 
         <TextView
             android:id="@+id/productPrice"
-            android:layout_width="50dp"
+            android:layout_width="@dimen/fragment_basket_product_price_width"
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_toLeftOf="@id/productQuantityInBasket"
@@ -38,11 +38,5 @@
             android:text="Price"
             android:textSize="@dimen/fragment_basket_product_textsize"
             android:textStyle="italic"/>
-
-       <!--<View
-           android:layout_below="@id/productName"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/black" />-->
 
     </RelativeLayout>

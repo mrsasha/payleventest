@@ -11,4 +11,13 @@
     <dimen name="fragment_basket_product_textsize">14sp</dimen>
     <dimen name="fragment_basket_product_item_padding">10dp</dimen>
     <dimen name="fragment_basket_total_textsize">20sp</dimen>
+    <dimen name="fragment_product_quantity_width">40dp</dimen>
+    <dimen name="fragment_product_price_width">60dp</dimen>
+    <dimen name="fragment_distance">20dp</dimen>
+    <dimen name="fragment_basket_footer_height">25dp</dimen>
+    <dimen name="fragment_basket_footer_margin_vertical">10dp</dimen>
+    <dimen name="fragment_basket_footer_total_width">100dp</dimen>
+    <dimen name="fragment_basket_product_quantity_width">30dp</dimen>
+    <dimen name="fragment_basket_product_price_width">50dp</dimen>
+    <dimen name="fragment_products_progress_size">40dp</dimen>
 </resources>
