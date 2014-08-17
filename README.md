@@ -4,12 +4,12 @@ This is the test program for Payleven, written for Android. It's compiled agains
 
 The program uses reactive programming techniques that enable event-driven programming, and rx-java with rx-android library enables us to select particular threads we want it to run on (for example, subscribing to product results is on Schedulers.io() thread, while observing and UI updating is on AndroidSchedulers.mainThread()) so as to avoid UI blocking.
 
-The layout was optimized for landscape use on both smartphones and tablets.
+The layout was optimized for landscape use on both smartphones and tablets, but is usable also in portrait.
 
 ##TODO list
 
+- add view holder to expandable list view
 - add error handling
-- add local data caching when rotating the app
 
 ## DEPENDENCIES
 
@@ -17,7 +17,6 @@ The layout was optimized for landscape use on both smartphones and tablets.
 - Lombok - for generating getters, setters, tostring etc.
 - Rx-Java (core, Android) - for event-driven programming
 - Retrofit with OkHttp - for REST calls with rx support
-- Universal image loader - for cached image loading 
 - Gson - for JSON <-> POJO conversions
 
 ## LICENSE
