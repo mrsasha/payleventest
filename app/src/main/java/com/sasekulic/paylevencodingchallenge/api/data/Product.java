@@ -1,7 +1,9 @@
 package com.sasekulic.paylevencodingchallenge.api.data;
 
 import lombok.Getter;
+import lombok.ToString;
 
+@ToString
 public class Product implements Comparable<Product> {
 
     @Getter public String id;
