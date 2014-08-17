@@ -36,4 +36,9 @@ public class FragmentShoppingBasket extends Fragment {
         return mView;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        mSettingsManager.getShoppingBasketManager().updateTotal(mSettingsManager.getShoppingBasketManager().getShoppingBasketTotal());
+    }
 }
