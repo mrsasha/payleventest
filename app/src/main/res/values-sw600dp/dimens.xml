@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fragment_basket_width">250dp</dimen>
+    <dimen name="fragment_products_category_textsize">18sp</dimen>
+    <dimen name="fragment_products_product_textsize">16sp</dimen>
+    <dimen name="fragment_basket_title_textsize">20sp</dimen>
+    <dimen name="fragment_products_category_margin_left">35dp</dimen>
+    <dimen name="fragment_products_product_item_padding_left">40dp</dimen>
+    <dimen name="fragment_products_product_item_padding_right">20dp</dimen>
+    <dimen name="fragment_basket_product_textsize">14sp</dimen>
+    <dimen name="fragment_basket_product_item_padding">10dp</dimen>
+    <dimen name="fragment_basket_total_textsize">20sp</dimen>
+    <dimen name="fragment_product_quantity_width">40dp</dimen>
+    <dimen name="fragment_product_price_width">60dp</dimen>
+    <dimen name="fragment_distance">20dp</dimen>
+    <dimen name="fragment_basket_footer_height">25dp</dimen>
+    <dimen name="fragment_basket_footer_margin_vertical">10dp</dimen>
+    <dimen name="fragment_basket_footer_total_width">100dp</dimen>
+    <dimen name="fragment_basket_product_quantity_width">30dp</dimen>
+    <dimen name="fragment_basket_product_price_width">50dp</dimen>
+    <dimen name="fragment_products_progress_size">40dp</dimen>
+</resources>
