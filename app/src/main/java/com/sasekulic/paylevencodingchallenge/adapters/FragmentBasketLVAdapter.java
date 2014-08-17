@@ -70,9 +70,7 @@ public class FragmentBasketLVAdapter extends BaseAdapter {
             public void onClick(View v) {
                 Toast.makeText(mSettingsManager.getParentActivity(), getItem(position).getName() + " removed from basket!",
                         Toast.LENGTH_SHORT).show();
-                int quantity = mSettingsManager.getShoppingBasketManager().deleteItemFromBasket(getItem(position));
-//                TextView productQuantityInBasket = (TextView) v.findViewById(R.id.productQuantityInBasket);
-//                productQuantityInBasket.setText(Integer.toString(mSettingsManager.getShoppingBasketManager().getQuantityForProduct(child)));
+                mSettingsManager.getShoppingBasketManager().deleteItemFromBasket(getItem(position));
             }
         });
 
