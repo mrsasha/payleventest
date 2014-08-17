@@ -14,7 +14,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:layout_alignParentLeft="true"
-            android:text="Product name"
+            android:text="Product"
             android:textSize="@dimen/fragment_basket_product_textsize"
             android:textStyle="bold"/>
 
@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_alignParentRight="true"
-            android:text="Qty"
+            android:text="#"
             android:textSize="@dimen/fragment_basket_product_textsize"
             android:textStyle="italic"/>
 
@@ -35,7 +35,7 @@
             android:gravity="center"
             android:layout_toLeftOf="@id/productQuantityInBasket"
             android:layout_marginRight="@dimen/fragment_basket_product_item_padding"
-            android:text="Price"
+            android:text="$"
             android:textSize="@dimen/fragment_basket_product_textsize"
             android:textStyle="italic"/>
 

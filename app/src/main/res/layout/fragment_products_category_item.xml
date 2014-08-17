@@ -7,15 +7,6 @@
     android:layout_height="?android:attr/listPreferredItemHeight"
     >
 
-    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/categoryName"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:gravity="left|center_vertical"
-        android:text="Product category"
-        android:textSize="@dimen/fragment_products_category_textsize"
-        android:textStyle="bold" />
-
     <ImageView
         android:id="@+id/productQuantityInBasket"
         android:src="@drawable/ic_action_cart"
@@ -25,8 +16,19 @@
         android:layout_alignParentRight="true"
         />
 
+    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:text="Product category"
+        android:layout_alignBottom="@id/productQuantityInBasket"
+        android:textSize="@dimen/fragment_products_category_textsize"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/productPrice"
+        android:layout_alignBottom="@id/productQuantityInBasket"
         android:layout_width="@dimen/fragment_product_price_width"
         android:layout_height="match_parent"
         android:gravity="center"

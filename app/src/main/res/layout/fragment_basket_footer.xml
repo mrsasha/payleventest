@@ -22,13 +22,7 @@
         android:layout_marginTop="@dimen/fragment_basket_footer_margin_vertical"
         android:layout_marginBottom="@dimen/fragment_basket_footer_margin_vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="Total"
-            android:textSize="@dimen/fragment_basket_product_textsize"
-            android:textStyle="bold"/>
+
 
         <TextView
             android:id="@+id/totalBasketPrice"
@@ -40,6 +34,16 @@
             android:layout_marginRight="@dimen/fragment_basket_product_item_padding"
             android:textSize="@dimen/fragment_basket_total_textsize"
             android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/totalBasketLabel"
+            android:layout_alignBottom="@id/totalBasketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Total"
+            android:textSize="@dimen/fragment_basket_product_textsize"
+            android:textStyle="bold"/>
 
     </RelativeLayout>
 
