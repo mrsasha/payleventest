@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:paddingRight="@dimen/fragment_products_product_item_padding"
+    android:paddingRight="@dimen/fragment_products_product_item_padding_right"
+    android:paddingLeft="@dimen/fragment_products_product_item_padding_left"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
     >
@@ -10,7 +11,6 @@
         android:id="@+id/categoryName"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/fragment_products_product_item_padding"
         android:gravity="left|center_vertical"
         android:text="Product category"
         android:textSize="@dimen/fragment_products_category_textsize"
@@ -31,7 +31,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:layout_toLeftOf="@id/productQuantityInBasket"
-        android:layout_marginRight="@dimen/fragment_products_product_item_padding"
+        android:layout_marginRight="@dimen/fragment_products_product_item_padding_right"
         android:text="$"
         android:textSize="@dimen/fragment_products_category_textsize"
         android:textStyle="bold" />

@@ -34,6 +34,7 @@
             android:id="@+id/totalBasketPrice"
             android:layout_width="@dimen/fragment_basket_footer_total_width"
             android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
             android:gravity="center_vertical|right"
             android:text="0"
             android:layout_marginRight="@dimen/fragment_basket_product_item_padding"

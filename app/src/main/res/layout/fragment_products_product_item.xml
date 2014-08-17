@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:clickable="true"
-    android:paddingLeft="@dimen/fragment_products_product_item_padding"
-    android:paddingRight="@dimen/fragment_products_product_item_padding"
+    android:paddingLeft="@dimen/fragment_products_product_item_padding_left"
+    android:paddingRight="@dimen/fragment_products_product_item_padding_right"
     tools:context=".MainActivity">
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:layout_toLeftOf="@id/productQuantityInBasket"
-        android:layout_marginRight="@dimen/fragment_products_product_item_padding"
+        android:layout_marginRight="@dimen/fragment_products_product_item_padding_right"
         android:text="0"
         android:textSize="@dimen/fragment_products_product_textsize"
         android:textStyle="italic"/>

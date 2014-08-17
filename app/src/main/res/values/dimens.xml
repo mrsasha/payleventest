@@ -7,7 +7,8 @@
     <dimen name="fragment_products_product_textsize">16sp</dimen>
     <dimen name="fragment_basket_title_textsize">20sp</dimen>
     <dimen name="fragment_products_category_margin_left">35dp</dimen>
-    <dimen name="fragment_products_product_item_padding">40dp</dimen>
+    <dimen name="fragment_products_product_item_padding_left">40dp</dimen>
+    <dimen name="fragment_products_product_item_padding_right">20dp</dimen>
     <dimen name="fragment_basket_product_textsize">14sp</dimen>
     <dimen name="fragment_basket_product_item_padding">10dp</dimen>
     <dimen name="fragment_basket_total_textsize">20sp</dimen>
