@@ -49,7 +49,7 @@ public class FragmentProducts extends Fragment {
         mCategoriesAndProductsLV = (ExpandableListView) mView.findViewById(R.id.products_list);
 
         if (mCategoriesWithProducts!=null) {
-            FragmentProductsExpandableLVAdapter adapter = new FragmentProductsExpandableLVAdapter(mSettingsManager.getParentActivity(), mCategoriesWithProducts);
+            FragmentProductsExpandableLVAdapter adapter = new FragmentProductsExpandableLVAdapter(mSettingsManager, mCategoriesWithProducts);
             mCategoriesAndProductsLV.setAdapter(adapter);
         } else
             startLoadingProductsAndCategories ();
@@ -106,7 +106,7 @@ public class FragmentProducts extends Fragment {
                             mLoadingProgressBar.setVisibility(View.GONE);
                             mCategoriesAndProductsLV.setVisibility(View.VISIBLE);
                             if (mCategoriesWithProducts!=null) {
-                                FragmentProductsExpandableLVAdapter adapter = new FragmentProductsExpandableLVAdapter(mSettingsManager.getParentActivity(), mCategoriesWithProducts);
+                                FragmentProductsExpandableLVAdapter adapter = new FragmentProductsExpandableLVAdapter(mSettingsManager, mCategoriesWithProducts);
                                 mCategoriesAndProductsLV.setAdapter(adapter);
                             }
                         } else {

@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sasekulic.paylevencodingchallenge.R;
+import com.sasekulic.paylevencodingchallenge.SettingsManager;
 import com.sasekulic.paylevencodingchallenge.api.data.Product;
 import com.sasekulic.paylevencodingchallenge.api.data.ProductCategory;
 
@@ -18,13 +19,15 @@ import java.util.List;
 public class FragmentProductsExpandableLVAdapter extends BaseExpandableListAdapter {
 
     private final List<ProductCategory> productCategories;
+    private final SettingsManager mSettingsManager;
     public LayoutInflater inflater;
     public Activity activity;
 
-    public FragmentProductsExpandableLVAdapter(Activity act, List<ProductCategory> categories) {
-        activity = act;
+    public FragmentProductsExpandableLVAdapter(SettingsManager mgr, List<ProductCategory> categories) {
+        mSettingsManager = mgr;
+        activity = mgr.getParentActivity();
         productCategories = categories;
-        inflater = act.getLayoutInflater();
+        inflater = activity.getLayoutInflater();
     }
 
     @Override
@@ -44,17 +47,25 @@ public class FragmentProductsExpandableLVAdapter extends BaseExpandableListAdapt
             convertView = inflater.inflate(R.layout.fragment_products_product_item, null);
         }
 
+        final Product child = getChild(groupPosition, childPosition);
+
         TextView productName = (TextView) convertView.findViewById(R.id.productName);
-        productName.setText(getChild(groupPosition, childPosition).getName());
+        productName.setText(child.getName());
 
         TextView productPrice = (TextView) convertView.findViewById(R.id.productPrice);
-        productPrice.setText(Integer.toString(getChild(groupPosition, childPosition).getPrice()));
+        productPrice.setText(Integer.toString(child.getPrice()));
+
+        TextView productQuantityInBasket = (TextView) convertView.findViewById(R.id.productQuantityInBasket);
+        productQuantityInBasket.setText(Integer.toString(mSettingsManager.getShoppingBasketManager().getQuantityForProduct(child)));
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(activity, getChild(groupPosition, childPosition).getName(),
+                Toast.makeText(activity, getChild(groupPosition, childPosition).getName() + " added to basket!",
                         Toast.LENGTH_SHORT).show();
+                int quantity = mSettingsManager.getShoppingBasketManager().addItemToBasket(getChild(groupPosition, childPosition));
+                TextView productQuantityInBasket = (TextView) v.findViewById(R.id.productQuantityInBasket);
+                productQuantityInBasket.setText(Integer.toString(mSettingsManager.getShoppingBasketManager().getQuantityForProduct(child)));
             }
         });
         return convertView;
