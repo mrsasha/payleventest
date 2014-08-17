@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basket_footer"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/total_separator"
+        android:layout_below="@id/basket_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_basket_total"
+        android:layout_below="@id/total_separator"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/fragment_basket_product_item_padding"
+        android:paddingRight="@dimen/fragment_basket_product_item_padding"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="Total"
+            android:textSize="@dimen/fragment_basket_product_textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/totalBasketPrice"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:layout_marginRight="@dimen/fragment_basket_product_item_padding"
+            android:textSize="@dimen/fragment_basket_total_textsize"
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

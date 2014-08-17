@@ -14,8 +14,11 @@
         android:id="@+id/basket_list"
         android:layout_below="@id/fragment_basket_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_height="wrap_content">
     </ListView>
+
+
+
+
 
 </RelativeLayout>

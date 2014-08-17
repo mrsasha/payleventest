@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:clickable="true"
+        android:paddingLeft="@dimen/fragment_basket_product_item_padding"
+        android:paddingRight="@dimen/fragment_basket_product_item_padding"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="Product name"
+            android:textSize="@dimen/fragment_basket_product_textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/productQuantityInBasket"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="Qty"
+            android:textSize="@dimen/fragment_basket_product_textsize"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/productQuantityInBasket"
+            android:layout_marginRight="@dimen/fragment_basket_product_item_padding"
+            android:text="Price"
+            android:textSize="@dimen/fragment_basket_product_textsize"
+            android:textStyle="italic"/>
+
+       <!--<View
+           android:layout_below="@id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />-->
+
+    </RelativeLayout>
